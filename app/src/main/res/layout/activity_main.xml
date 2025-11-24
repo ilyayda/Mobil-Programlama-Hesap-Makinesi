@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F7FA"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hesap Makinesi"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:textColor="#263238"
+    android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etSayi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birinci Sayı"
+        android:textColorHint="#90A4AE"
+        android:inputType="numberDecimal"
+        android:background="#FFFFFF"
+        android:textColor="#37474F"
+        android:padding="15dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etSayi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İkinci Sayı"
+        android:textColorHint="#90A4AE"
+        android:inputType="numberDecimal"
+        android:background="#FFFFFF"
+        android:textColor="#37474F"
+        android:padding="15dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/btnTopla"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnCikar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnCarp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnBol"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00897B"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTemizle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TEMİZLE"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF7043"
+        android:textStyle="bold"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/txtSonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sonuç: 0"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="35dp"
+        android:textColor="#455A64"/>
+
+</LinearLayout>
